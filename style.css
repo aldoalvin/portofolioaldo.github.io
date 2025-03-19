@@ -209,9 +209,12 @@ footer {
     .navbar ul li {
         margin: 5px 10;
     }
-
+    #hero-content {
+        align-content: center;
+    }
     #hero img {
         width: 150px;
+        align: center;
     }
 
     .about-text {
