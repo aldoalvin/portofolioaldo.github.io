@@ -25,6 +25,7 @@ h1, h2 {
 }
 
 /* 🌟 Navbar */
+/* Navbar */
 .navbar {
     background: #333;
     color: #fff;
@@ -60,6 +61,7 @@ h1, h2 {
     color: #f0a500;
 }
 
+
 /* 🌟 Halaman Utama */
 #hero {
     display: flex;
@@ -68,25 +70,25 @@ h1, h2 {
     padding: 50px 20px;
     background: #222;
     color: white;
-    flex-wrap: wrap;
 }
 .hero-content {
-    text-align: center;
-    flex: 1;
+    text-align: left;
+    margin-right: 20px;
 }
 #hero img {
     width: 200px;
     border-radius: 10%;
 }
-
-/* 🌟 Tentang Saya */
+#hero center {
+    margin-top: 10px;
+}
 .about-text {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 16px;
+    max-width: 1000px; /* Lebar maksimal */
+    margin: 20px auto; /* Pusatkan teks */
+    padding: 5px; /* Tambahkan jarak kiri dan kanan 100px */
+    text-align: justify; /* Rata kiri dan kanan */
+    line-height: 1.6; /* Jarak antar baris */
+    font-size: 16px; /* Ukuran font */
 }
 
 /* 🌟 Keahlian */
@@ -98,7 +100,6 @@ h1, h2 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
 }
 .skill-list span {
     background: #ff6600;
@@ -119,35 +120,10 @@ h1, h2 {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
 }
 .project-card img {
-    width: 100%;
+    width: 400px;
     border-radius: 5px;
-}
-
-/* 🌟 Responsif untuk HP */
-@media (max-width: 768px) {
-    .project-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-card {
-        max-width: 90%;
-    }
-}
-
-/* 🌟 Responsif untuk layar kecil (HP) */
-@media (max-width: 480px) {
-    .project-card {
-        max-width: 95%;
-        padding: 8px;
-    }
-    .project-card img {
-        width: 100%;
-    }
 }
 
 /* 🌟 Kontak */
@@ -173,5 +149,5 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0.1px;
 }
