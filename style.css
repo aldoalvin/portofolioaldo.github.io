@@ -1,4 +1,70 @@
-/* 🌟 Halaman Utama (Hero Section) */
+/* 🌟 Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.highlight {
+    color: #ff6600;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+/* 🌟 Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f0a500;
+}
+
+/* 🌟 Halaman Utama */
 #hero {
     display: flex;
     justify-content: center;
@@ -7,11 +73,11 @@
     background: #222;
     color: white;
     flex-wrap: wrap; /* Agar elemen turun ke bawah di layar kecil */
-    gap: 40px; /* Memberi jarak antara teks & gambar */
+    text-align: left;
 }
 
 .hero-content {
-    text-align: left;
+    margin-right: 40px;
     max-width: 500px;
 }
 
@@ -29,16 +95,16 @@
     object-fit: cover;
 }
 
-/* 🌟 Responsif untuk Tablet & HP */
+/* 🌟 Responsive untuk Tablet & HP */
 @media (max-width: 1024px) {
     #hero {
         flex-direction: column;
         text-align: center;
         padding: 30px 15px;
-        gap: 20px; /* Jarak antar teks & gambar di HP */
     }
 
     .hero-content {
+        margin: 0;
         text-align: center;
     }
 
@@ -51,7 +117,8 @@
     }
 
     #hero img {
-        width: 200px; /* Ukuran lebih kecil */
+        width: 200px; 
+        margin-top: 20px;
     }
 }
 
@@ -59,7 +126,11 @@
     #hero {
         flex-direction: column;
         padding: 20px;
-        gap: 15px;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     #hero h2 {
@@ -72,13 +143,13 @@
 
     #hero img {
         width: 180px;
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
     #hero {
         padding: 15px;
-        gap: 10px;
     }
 
     #hero h2 {
@@ -91,10 +162,29 @@
 
     #hero img {
         width: 150px;
+        margin-top: 10px;
     }
 }
 
-/* 🌟 Proyek (Project Card) */
+/* 🌟 Keahlian */
+#keahlian {
+    text-align: center;
+    padding: 20px 20px;
+}
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.skill-list span {
+    background: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* 🌟 Proyek */
 .project-grid {
     display: flex;
     gap: 20px;
@@ -107,8 +197,7 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
-    width: 400px; /* Ukuran default */
-    text-align: center;
+    width: 400px;
 }
 
 .project-card img {
@@ -116,22 +205,51 @@
     border-radius: 5px;
 }
 
-/* 🌟 Responsif untuk Project Card */
+/* 🌟 Responsive untuk Project Cards */
 @media (max-width: 1024px) {
     .project-card {
-        width: 320px; /* Menyesuaikan untuk tablet */
+        width: 350px;
     }
 }
 
 @media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .project-card {
-        width: 90%; /* Hampir penuh di layar kecil */
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .project-card {
-        width: 100%; /* Full width untuk HP */
-        padding: 8px;
+        width: 100%;
+    }
+}
+
+/* 🌟 Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* 🌟 Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
     }
 }
