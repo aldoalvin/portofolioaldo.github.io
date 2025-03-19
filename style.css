@@ -209,14 +209,27 @@ footer {
     .navbar ul li {
         margin: 5px 10;
     }
-    #hero-content {
-        align: center;
-    }
-    #hero img {
-        width: 150px;
-        align: center;
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Pastikan konten dan gambar berada di tengah */
+        text-align: center;
     }
 
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .a {
+        display: block;
+        margin: 10px auto; /* Posisikan tombol ke tengah */
+    }
     .about-text {
         padding: 25px;
         font-size: 14px;
