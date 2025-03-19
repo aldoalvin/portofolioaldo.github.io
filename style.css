@@ -76,10 +76,8 @@ h1, h2 {
     margin-right: 20px;
 }
 #hero img {
-    width: 220px;
+    width: 200px;
     border-radius: 10%;
-    flex: 1;
-    display: block;
 }
 #hero center {
     margin-top: 10px;
