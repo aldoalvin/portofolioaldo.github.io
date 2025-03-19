@@ -19,13 +19,13 @@ h1, h2 {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 .btn:hover {
     background: #cc5200;
 }
 
 /* 🌟 Navbar */
-/* Navbar */
 .navbar {
     background: #333;
     color: #fff;
@@ -35,60 +35,70 @@ h1, h2 {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .navbar h1 {
     font-size: 1.5em;
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
-
 .navbar ul li {
     margin-left: 20px;
 }
-
 .navbar ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .navbar ul li a:hover {
     color: #f0a500;
 }
 
+/* 🌟 Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
 
 /* 🌟 Halaman Utama */
 #hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
     background: #222;
     color: white;
+    text-align: center;
 }
 .hero-content {
-    text-align: left;
-    margin-right: 20px;
+    max-width: 600px;
 }
 #hero img {
     width: 200px;
     border-radius: 10%;
-}
-#hero center {
     margin-top: 10px;
 }
+
+/* 🌟 Tentang */
 .about-text {
-    max-width: 1000px; /* Lebar maksimal */
-    margin: 20px auto; /* Pusatkan teks */
-    padding: 5px; /* Tambahkan jarak kiri dan kanan 100px */
-    text-align: justify; /* Rata kiri dan kanan */
-    line-height: 1.6; /* Jarak antar baris */
-    font-size: 16px; /* Ukuran font */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* 🌟 Keahlian */
@@ -99,6 +109,7 @@ h1, h2 {
 .skill-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .skill-list span {
@@ -120,10 +131,21 @@ h1, h2 {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 .project-card img {
-    width: 400px;
+    width: 100%;
     border-radius: 5px;
+}
+
+/* 🌟 Responsive Proyek */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* 🌟 Kontak */
@@ -149,5 +171,16 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 0.1px;
+    padding: 10px;
+}
+
+/* 🌟 Responsif */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
