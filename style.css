@@ -210,7 +210,7 @@ footer {
         margin: 5px 10;
     }
     #hero-content {
-        align-content: center;
+        align: center;
     }
     #hero img {
         width: 150px;
