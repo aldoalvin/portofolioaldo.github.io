@@ -1,4 +1,4 @@
-/* 🌟 Halaman Utama */
+/* 🌟 Halaman Utama (Hero Section) */
 #hero {
     display: flex;
     justify-content: center;
@@ -7,12 +7,11 @@
     background: #222;
     color: white;
     flex-wrap: wrap; /* Agar elemen turun ke bawah di layar kecil */
-    gap: 20px; /* Memberi jarak antar elemen */
+    gap: 40px; /* Memberi jarak antara teks & gambar */
 }
 
 .hero-content {
     text-align: left;
-    margin-right: 20px;
     max-width: 500px;
 }
 
@@ -30,17 +29,16 @@
     object-fit: cover;
 }
 
-/* 🌟 RESPONSIVE HERO */
+/* 🌟 Responsif untuk Tablet & HP */
 @media (max-width: 1024px) {
     #hero {
         flex-direction: column;
         text-align: center;
         padding: 30px 15px;
-        gap: 15px; /* Tambahkan jarak antar teks dan gambar */
+        gap: 20px; /* Jarak antar teks & gambar di HP */
     }
 
     .hero-content {
-        margin: 0;
         text-align: center;
     }
 
@@ -53,8 +51,7 @@
     }
 
     #hero img {
-        width: 220px; /* Ukuran lebih kecil */
-        margin-top: 10px;
+        width: 200px; /* Ukuran lebih kecil */
     }
 }
 
@@ -62,11 +59,7 @@
     #hero {
         flex-direction: column;
         padding: 20px;
-        gap: 10px;
-    }
-
-    .hero-content {
-        text-align: center;
+        gap: 15px;
     }
 
     #hero h2 {
@@ -85,7 +78,7 @@
 @media (max-width: 480px) {
     #hero {
         padding: 15px;
-        gap: 8px;
+        gap: 10px;
     }
 
     #hero h2 {
@@ -101,7 +94,7 @@
     }
 }
 
-/* 🌟 Project Section */
+/* 🌟 Proyek (Project Card) */
 .project-grid {
     display: flex;
     gap: 20px;
@@ -111,11 +104,11 @@
 
 .project-card {
     background: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px gray;
-    width: 400px; /* Default size */
-    transition: 0.3s ease-in-out;
+    width: 400px; /* Ukuran default */
+    text-align: center;
 }
 
 .project-card img {
@@ -123,23 +116,22 @@
     border-radius: 5px;
 }
 
-/* 🌟 RESPONSIVE PROJECT CARD */
+/* 🌟 Responsif untuk Project Card */
 @media (max-width: 1024px) {
     .project-card {
-        width: 350px; /* Ukuran lebih kecil */
+        width: 320px; /* Menyesuaikan untuk tablet */
     }
 }
 
 @media (max-width: 768px) {
     .project-card {
-        width: 300px;
-        padding: 10px;
+        width: 90%; /* Hampir penuh di layar kecil */
     }
 }
 
 @media (max-width: 480px) {
     .project-card {
-        width: 100%; /* Penuh saat di layar HP */
+        width: 100%; /* Full width untuk HP */
         padding: 8px;
     }
 }
