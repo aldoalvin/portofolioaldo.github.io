@@ -1,3 +1,4 @@
+
 /* 🌟 Gaya Umum */
 body {
     font-family: Arial, sans-serif;
@@ -176,8 +177,8 @@ footer {
     }
 
     .about-text {
-        padding: 10px;
-        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .skill-list {
         display: flex;
@@ -219,17 +220,19 @@ footer {
     .hero-content {
         width: 100%;
         text-align: center;
+        margin : 1px auto;
     }
 
     #hero img {
         width: 150px;
-        margin-top: 20px;
+        margin : 20px auto;
     }
 
-    .a {
-        display: block;
-        margin: 10px auto; /* Posisikan tombol ke tengah */
-    }
+    /* #hero a {
+        width: 25%;
+        text-align: center;
+        margin : 10px auto;
+    } */
     .about-text {
         padding: 25px;
         font-size: 14px;
